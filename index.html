@@ -7,34 +7,111 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <style>
+        .profile-pic {
+            max-width: 160px;
+            width: 100%;
+        }
+
+        .hello {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .btn {
+            font-size: 0.75rem;
+        }
+
+        @media (min-width: 576px) {
+            .btn {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .hello {
+                text-align: left;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .profile-pic {
+                max-width: 400px;
+                width: 100%;
+            }
+        }
+
+        .display-3 {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: 576px) {
+            .display-3 {
+                font-size: 4.5rem;
+            }
+        }
+
+        .display-4 {
+            font-size: 1.75rem;
+        }
+
+        @media (min-width: 576px) {
+            .display-4 {
+                font-size: 3.5rem;
+            }
+        }
+
         .project-card {
-            max-width: 320px;
             text-align: center;
             margin-top: 1rem;
             margin-bottom: 45px;
             position: relative;
             width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        .project-card img {
+            width: 100%;
+            max-width: 180px;
+        }
+
+        @media (min-width: 576px) {
+            .project-card {
+                max-width: 320px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            .project-card img {
+                width: 100%;
+                max-width: 400px;
+            }
         }
 
         .project-footer {
             position: absolute;
-            left: 0;
-            right: 0;
+            left: 30px;
+            right: 30px;
             bottom: -40px;
+        }
+
+        @media (min-width: 576px) {
+            .project-footer {
+                left: 15px;
+                right: 15px;
+            }
         }
     </style>
 </head>
 <body>
 <div class="container-fluid my-3">
     <div class="jumbotron jumbotron-fluid">
-        <div class="p-3 d-flex justify-content-center align-items-start">
-            <div class="w-25 mx-3">
-                <img src="/img/face.jpg" alt="It's me!" class="img-fluid img-thumbnail rounded-circle">
+        <div class="p-3 row">
+            <div class="col-md-4 text-center">
+                <img src="/img/face.jpg" alt="It's me!" class="img-fluid img-thumbnail rounded-circle profile-pic">
             </div>
-            <div class="w-75 mx-3">
-                <h1 class="display-3">Hello, world!</h1>
+            <div class="col-md-8">
+                <h1 class="display-3 hello">Hello, world!</h1>
 
                 <p class="lead">Привет, меня зовут Александр и я Software Developer.</p>
                 <hr class="my-4">
@@ -72,17 +149,18 @@
     </div>
 
     <h2 class="my-5 text-center display-4">2020 год</h2>
-    <div class="row row-cols-3 justify-content-around align-content-stretch">
+    <div class="row row-cols-12 row-cols-md-3 justify-content-around align-content-stretch">
         <div class="project-card">
             <img src="/img/projects/2020_identity_quiz.jpg" alt="Identity Quiz"
                  class="img-fluid img-thumbnail rounded-circle">
             <h3 class="mt-3">Identity Quiz</h3>
             <div class="text-left px-2">
-                <p>Как-то раз в чате разработчиков кто-то решил, что большинство участников боты, т.к. практически ничего не пишут.</p>
+                <p>Как-то раз в чате разработчиков кто-то решил, что большинство участников боты, т.к. практически
+                    ничего не пишут.</p>
                 <p>Самым простым способом определить, прав он или нет, стало создание опроса.</p>
             </div>
             <div class="row no-gutters project-footer">
-                <div class="col-sm-6 px-1">
+                <div class="col-6 px-1">
                     <a class="btn btn-block btn-outline-secondary"
                        href="https://github.com/mazanax/identity-quiz" target="_blank" title="Github">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -92,7 +170,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="col-sm-6 px-1">
+                <div class="col-6 px-1">
                     <a class="btn btn-block btn-outline-secondary" href="https://quiz.mznx.ru/" target="_blank"
                        title="Перейти на сайт">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -119,7 +197,7 @@
             </div>
 
             <div class="row no-gutters project-footer">
-                <div class="col-sm-12 px-1">
+                <div class="col-12 px-1">
                     <a class="btn btn-block btn-outline-secondary" href="https://wishboard.app/" target="_blank"
                        title="Создать свой вишлист">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -145,7 +223,7 @@
                     декомпилированный java-код.</p>
             </div>
             <div class="row no-gutters project-footer">
-                <div class="col-sm-12 px-1">
+                <div class="col-12 px-1">
                     <a class="btn btn-block btn-outline-secondary"
                        href="https://github.com/mazanax/PEG88S-wifi-controller" target="_blank" title="Github">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -162,7 +240,7 @@
     <hr class="w-50 my-5">
 
     <h2 class="my-5 text-center display-4">2019 год</h2>
-    <div class="row row-cols-3 justify-content-around align-content-stretch">
+    <div class="row row-cols-12 row-cols-md-3 justify-content-around align-content-stretch">
         <div class="project-card">
             <img src="/img/projects/2019_activity_notifier.jpg" alt="Activity Notifier Bot"
                  class="img-fluid img-thumbnail rounded-circle">
@@ -172,7 +250,7 @@
                 <p>Когда нужно завершить какое-то действие, он пришлет сообщение в телеграм.</p>
             </div>
             <div class="row no-gutters project-footer">
-                <div class="col-sm-6 px-1">
+                <div class="col-6 px-1">
                     <a class="btn btn-block btn-outline-secondary" href="https://github.com/mazanax/activities-notifier"
                        target="_blank" title="Github">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -182,7 +260,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="col-sm-6 px-1">
+                <div class="col-6 px-1">
                     <a class="btn btn-block btn-outline-secondary" href="https://t.me/mznx_bot" target="_blank"
                        title="Перейти в Telegram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
