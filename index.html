@@ -1,1 +1,202 @@
-Hello, world!
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Alexander Gorshkov</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+    <style>
+        .project-card {
+            max-width: 320px;
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 45px;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .project-footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid my-3">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="p-3 d-flex justify-content-center align-items-start">
+            <div class="w-25 mx-3">
+                <img src="/img/face.jpg" alt="It's me!" class="img-fluid img-thumbnail rounded-circle">
+            </div>
+            <div class="w-75 mx-3">
+                <h1 class="display-3">Hello, world!</h1>
+
+                <p class="lead">Привет, меня зовут Александр и я Software Developer.</p>
+                <hr class="my-4">
+                <p>Я создал эту страницу, чтобы на моем домене было хоть что-то, а не 502 ошибка от Cloudflare.<br>
+                    А потом решил сделать коллекцию мини-проектов.</p>
+                <p>Возможно, вам это не понадобится, но вот список технологий, с которыми я время от времени
+                    работаю:</p>
+                <p class="h5">
+                    <!-- backend -->
+                    <span class="btn btn-outline-primary rounded-pill my-1">PHP</span>
+                    <span class="btn btn-outline-primary rounded-pill my-1">Python</span>
+                    <span class="btn btn-outline-primary rounded-pill my-1">Golang</span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                         viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                    </svg>
+
+                    <!-- databases -->
+                    <span class="btn btn-outline-info rounded-pill my-1">PostgreSQL</span>
+                    <span class="btn btn-outline-info rounded-pill my-1">MySQL</span>
+                    <span class="btn btn-outline-info rounded-pill my-1">ClickHouse</span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                         viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                    </svg>
+
+                    <!-- frontend -->
+                    <span class="btn btn-outline-success rounded-pill my-1">Vue</span>
+                    <span class="btn btn-outline-success rounded-pill my-1">Bootstrap</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="my-5 text-center display-4">2020 год</h2>
+    <div class="row row-cols-3 justify-content-around align-content-stretch">
+        <div class="project-card">
+            <img src="/img/projects/2020_identity_quiz.jpg" alt="Identity Quiz"
+                 class="img-fluid img-thumbnail rounded-circle">
+            <h3 class="mt-3">Identity Quiz</h3>
+            <div class="text-left small px-2">
+                <p>Как-то раз в чате разработчиков кто-то решил, что большинство участников боты, т.к. практически ничего не пишут.</p>
+                <p>Самым простым способом определить, прав он или нет, стало создание опроса.</p>
+            </div>
+            <div class="row no-gutters project-footer">
+                <div class="col-sm-6 px-1">
+                    <a class="btn btn-block btn-outline-secondary"
+                       href="https://github.com/mazanax/identity-quiz" target="_blank" title="Github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-github" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-sm-6 px-1">
+                    <a class="btn btn-block btn-outline-secondary" href="https://quiz.mznx.ru/" target="_blank"
+                       title="Перейти на сайт">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="/img/projects/2020_wishboard_app.jpg" alt="WishBoard.App"
+                 class="img-fluid img-thumbnail rounded-circle">
+            <h3 class="mt-3">WishBoard.App</h3>
+            <div class="text-left small px-2">
+                <p>Долго страдал без удобной (для меня) возможности вести список собственных желаний, чтобы понимать,
+                    чего я хочу и на что копить деньги.</p>
+                <p>Все изменилось, когда я решил отправиться в <a href="https://www.youtube.com/watch?v=6uKBggQ_UOs"
+                                                                  target="_blank">приключение на 20 минут</a>.</p>
+            </div>
+
+            <div class="row no-gutters project-footer">
+                <div class="col-sm-12 px-1">
+                    <a class="btn btn-block btn-outline-secondary" href="https://wishboard.app/" target="_blank"
+                       title="Создать свой вишлист">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="/img/projects/2020_peg88s_wifi_controller.jpg" alt="PEG88S wifi controller"
+                 class="img-fluid img-thumbnail rounded-circle">
+            <h3 class="mt-3">PEG88S wifi controller</h3>
+            <div class="text-left small px-2">
+                <p>Приложение, написанное на Python, с помощью которого можно управлять прыгающей китайской машинкой
+                    через Wi-Fi.</p>
+                <p>Пришлось долго и упорно изучать пакеты, которые шлет официальное приложение и читать
+                    декомпилированный java-код.</p>
+            </div>
+            <div class="row no-gutters project-footer">
+                <div class="col-sm-12 px-1">
+                    <a class="btn btn-block btn-outline-secondary"
+                       href="https://github.com/mazanax/PEG88S-wifi-controller" target="_blank" title="Github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-github" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="w-50 my-5">
+
+    <h2 class="my-5 text-center display-4">2019 год</h2>
+    <div class="row row-cols-3 justify-content-around align-content-stretch">
+        <div class="project-card">
+            <img src="/img/projects/2019_activity_notifier.jpg" alt="Activity Notifier Bot"
+                 class="img-fluid img-thumbnail rounded-circle">
+            <h3 class="mt-3">Activity Notifier Bot</h3>
+            <div class="text-left small px-2">
+                <p>Бот, которого я использую, как таймер с предустановленными интервалами времени.</p>
+                <p>Когда нужно завершить какое-то действие, он пришлет сообщение в телеграм.</p>
+            </div>
+            <div class="row no-gutters project-footer">
+                <div class="col-sm-6 px-1">
+                    <a class="btn btn-block btn-outline-secondary" href="https://github.com/mazanax/activities-notifier"
+                       target="_blank" title="Github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-github" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-sm-6 px-1">
+                    <a class="btn btn-block btn-outline-secondary" href="https://t.me/mznx_bot" target="_blank"
+                       title="Перейти в Telegram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery-3.0.0.slim.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
