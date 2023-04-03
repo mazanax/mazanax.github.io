@@ -68,7 +68,7 @@ body {
 }
 
 .glide .glide__arrows .glide__arrow {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     width: 25%;
     border: 0;
     outline: none;
@@ -117,8 +117,6 @@ body {
     bottom: 0;
     background: rgba(255, 255, 255, 0.6);
 }
-
-
 
 .glide__slide {
     position: relative;
@@ -186,10 +184,10 @@ body {
     display: block;
     border-radius: 16px;
     color: #fff;
-    text-shadow: 0 1px 1px #111;
+    text-shadow: 0 1px 1px #444;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     padding: 16px 8px;
     margin-top: auto;
@@ -197,6 +195,7 @@ body {
 
 .glide__slide article.background a.call-to-action {
     background: rgba(0, 0, 0, .6);
+    text-shadow: 0 1px 1px #111;
 }
 
 ::-webkit-scrollbar {
@@ -248,5 +247,10 @@ body {
     .glide__slide article p {
         font-size: 16px;
         margin: 0 0 12px;
+    }
+
+
+    .glide__slide article a.call-to-action {
+        font-size: 18px;
     }
 }
