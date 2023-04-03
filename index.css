@@ -180,11 +180,6 @@ body {
     margin: 0 0 12px;
 }
 
-.glide__slide article p {
-    font-size: 16px;
-    margin: 0 0 12px;
-}
-
 .glide__slide article a.call-to-action {
     width: 100%;
     background: rgba(0, 0, 0, .4);
@@ -248,5 +243,10 @@ body {
     .glide__slide article.long img.relative {
         max-height: 90px;
         width: auto;
+    }
+
+    .glide__slide article p {
+        font-size: 16px;
+        margin: 0 0 12px;
     }
 }
