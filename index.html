@@ -16,19 +16,13 @@
             background: #111;
             height: 100%;
             overflow-y: hidden;
-            font-size: 14px;
+            font-size: 11px;
             font-family: 'Roboto', sans-serif;
         }
 
-        @media screen and (min-width: 380px) and (max-width: 800px) {
+        @media screen and (min-width: 390px) {
             body {
                 font-size: 12px;
-            }
-        }
-
-        @media screen and (max-width: 380px) {
-            body {
-                font-size: 11px;
             }
         }
 
@@ -111,25 +105,17 @@
 
         .glide__slide article {
             position: relative;
-            height: calc(100% - 15rem);
-            width: 75%;
-            margin: 15rem auto 0;
+            width: 99%;
+            height: calc(100% - 7.5rem);
+            margin: 7.5rem auto 0;
         }
 
-        @media screen and (max-width: 380px) {
-            .glide__slide article {
-                width: 99%;
-                height: calc(100% - 7.5rem);
-                margin: 7.5rem auto 0;
-            }
-
-            .glide__slide article.long {
-                height: calc(100% - 5rem);
-                margin: 5rem auto 0;
-            }
+        .glide__slide article.long {
+            height: calc(100% - 5rem);
+            margin: 5rem auto 0;
         }
 
-        @media screen and (min-width: 380px) and (max-width: 800px) {
+        @media screen and (min-height: 900px) {
             .glide__slide article {
                 width: 95%;
                 height: calc(100% - 10rem);
@@ -142,6 +128,14 @@
             }
         }
 
+        @media screen and (min-width: 800px) {
+            .glide__slide article {
+                height: calc(100% - 15rem);
+                width: 75%;
+                margin: 15rem auto 0;
+            }
+        }
+
         .glide__slide article .row {
             display: flex;
             justify-content: center;
@@ -150,8 +144,8 @@
         }
 
         .glide__slide article img.userpic {
-            width: 120px;
-            height: 120px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             box-sizing: border-box;
         }
@@ -163,32 +157,28 @@
         }
 
         .glide__slide article.long img.relative {
-            max-height: 120px;
+            max-height: 90px;
             width: auto;
+        }
+
+        @media screen and (min-height: 900px) {
+            .glide__slide article.long img.relative {
+                max-height: 120px;
+                width: auto;
+            }
         }
 
         .glide__slide article h1 {
             font-family: 'Lobster', cursive;
-            font-size: 3rem;
+            font-size: 1.5rem;
             font-weight: normal;
             margin: 0;
         }
 
-        @media screen and (max-width: 380px) {
+        @media screen and (min-height: 900px) {
             .glide__slide article img.userpic {
-                width: 70px;
-                height: 70px;
-            }
-
-            .glide__slide article h1 {
-                font-size: 1.5rem;
-            }
-        }
-
-        @media screen and (min-width: 380px) and (max-width: 800px) {
-            .glide__slide article img.userpic {
-                width: 80px;
-                height: 80px;
+                width: 120px;
+                height: 120px;
             }
 
             .glide__slide article h1 {
@@ -197,13 +187,19 @@
         }
 
         .glide__slide article p {
-            font-size: 1.2rem;
+            font-size: 0.8rem;
             font-weight: normal;
         }
 
-        @media screen and (max-width: 380px) {
+        @media screen and (min-height: 800px) {
             .glide__slide article p {
-                font-size: .8rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (min-height: 900px) {
+            .glide__slide article p {
+                font-size: 1.5rem;
             }
         }
 
@@ -214,20 +210,20 @@
             bottom: 25px;
             background: rgba(0, 0, 0, .3);
             display: block;
-            padding: 20px 5px;
             border-radius: 20px;
             color: #fff;
             text-shadow: 0 1px 1px #111;
             text-decoration: none;
             text-align: center;
-            font-size: 1.2rem;
+            font-size: .8rem;
+            padding: 15px 5px;
             z-index: 25;
         }
 
-        @media screen and (max-width: 380px) {
+        @media screen and (min-height: 900px) {
             .glide__slide article a.call-to-action {
-                font-size: .8rem;
-                padding: 15px 5px;
+                font-size: 1.2rem;
+                padding: 20px 5px;
             }
         }
     </style>
