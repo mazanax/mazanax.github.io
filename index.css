@@ -176,6 +176,11 @@ body {
 }
 
 .glide__slide article p {
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+
+.glide__slide article p {
     font-size: 16px;
     margin: 0 0 12px;
 }
