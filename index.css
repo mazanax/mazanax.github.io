@@ -84,6 +84,7 @@ body {
     z-index: 9;
     flex-grow: 1;
     cursor: pointer;
+    pointer-events: bounding-box;
 }
 
 .glide .glide__arrows .glide__arrow--left {
