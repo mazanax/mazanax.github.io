@@ -67,6 +67,10 @@ body {
     background: #fff;
 }
 
+.glide .glide__arrows {
+    pointer-events: none;
+}
+
 .glide .glide__arrows .glide__arrow {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     width: 25%;
@@ -142,6 +146,15 @@ body {
     margin-bottom: 40px;
 }
 
+.glide__slide article .content.scrollable {
+    justify-self: end;
+    max-height: 95vh;
+    margin-bottom: 40px;
+    overflow-y: auto;
+
+    user-select: auto;
+}
+
 .glide__slide article.background .content {
     padding: 16px;
     background-color: rgba(255, 255, 255, .7);
@@ -170,6 +183,12 @@ body {
     font-family: 'Lobster', cursive;
     font-size: 24px;
     font-weight: normal;
+    margin: 16px 0;
+}
+
+.glide__slide article h6 {
+    font-size: 16px;
+    font-weight: bold;
     margin: 16px 0;
 }
 
@@ -234,6 +253,12 @@ body {
         margin: 20px 0;
     }
 
+    .glide__slide article h6 {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 16px 0;
+    }
+
     .glide__slide article img.userpic {
         width: 120px;
         height: 120px;
@@ -248,7 +273,6 @@ body {
         font-size: 16px;
         margin: 0 0 12px;
     }
-
 
     .glide__slide article a.call-to-action {
         font-size: 18px;
