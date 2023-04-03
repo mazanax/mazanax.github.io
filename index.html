@@ -35,6 +35,7 @@
             border-radius: 10px;
             -webkit-border-radius: 10px;
             overflow: hidden;
+            isolation: isolate;
         }
 
         .glide {
@@ -83,8 +84,12 @@
         .glide .glide__arrows .glide__arrow {
             width: 35%;
             border: 0;
-            outline: 0;
+            outline: none;
             background: none;
+        }
+
+        .glide .glide__arrows .glide__arrow:active {
+            border-style: outset;
         }
 
         .glide .glide__track {
