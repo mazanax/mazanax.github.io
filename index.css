@@ -174,7 +174,11 @@ body {
     box-sizing: border-box;
 }
 
-.glide__slide article.long img.relative {
+.glide__slide article img.relative.full {
+    max-width: 100%;
+}
+
+.glide__slide article.long img.relative:not(.full) {
     max-height: 90px;
     width: auto;
 }
