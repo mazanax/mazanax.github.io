@@ -19,6 +19,7 @@ body {
     width: 100%;
     max-width: 400px;
     height: calc(100vh - 12px - env(safe-area-inset-top));
+    height: -webkit-fill-available;
     background: #fff;
     margin: 12px auto 0;
     border-radius: 12px 12px 0 0;
