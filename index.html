@@ -227,7 +227,15 @@
 
 <script src="./dist/glide.min.js"></script>
 <script>
-  new Glide('.glide', {type: 'carousel'}).mount()
+  let startAt = window.location.hash ? window.location.hash.split('page-')[1] : 0;
+  if (startAt < 0 || startAt >= document.querySelectorAll('.glide__bullet').length) {
+    window.location.hash = 'page-0'
+    startAt = 0;
+  }
+  const glide = new Glide('.glide', {type: 'carousel', startAt: startAt}).mount()
+  glide.on('run.after', function () {
+    window.location.hash = `page-${glide.index}`
+  })
 </script>
 </body>
 </html>
