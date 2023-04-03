@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="rua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Alexander Gorshkov</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111;
+            height: 100%;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @media screen and (min-width: 380px) and (max-width: 800px) {
+            body {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            body {
+                font-size: 11px;
+            }
+        }
+
+        .wrapper {
+            position: relative;
+            width: calc((100vh - 20px) * 9 / 19);
+            height: calc(100vh - 20px);
+            background: #fff;
+            margin: 10px auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .glide {
+            position: relative;
+            height: 100%;
+        }
+
+        .glide .glide__bullets {
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 10px;
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        .glide .glide__bullets .glide__bullet {
+            width: 99%;
+        }
+
+        .glide .glide__arrows {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            bottom: 150px;
+            height: calc(100% - 150px);
+            width: 100%;
+            background: none;
+            z-index: 9;
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        .glide .glide__arrows .glide__arrow {
+            width: 35%;
+            border: 0;
+            outline: 0;
+            background: none;
+        }
+
+        .glide .glide__track {
+            height: 100%;
+        }
+
+        .glide .glide__track .glide__slides {
+            height: 100%;
+        }
+
+        .glide .glide__track .glide__slides .glide__slide {
+            position: relative;
+            background-size: auto 100%;
+            padding: 20px 10px 10px;
+            height: 100%;
+        }
+
+        .glide__slide .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .glide__slide article {
+            position: relative;
+            height: calc(100% - 15rem);
+            width: 75%;
+            margin: 15rem auto 0;
+        }
+
+        @media screen and (max-width: 380px) {
+            .glide__slide article {
+                width: 99%;
+                height: calc(100% - 7.5rem);
+                margin: 7.5rem auto 0;
+            }
+
+            .glide__slide article.long {
+                height: calc(100% - 5rem);
+                margin: 5rem auto 0;
+            }
+        }
+
+        @media screen and (min-width: 380px) and (max-width: 800px) {
+            .glide__slide article {
+                width: 95%;
+                height: calc(100% - 10rem);
+                margin: 10rem auto 0;
+            }
+
+            .glide__slide article.long {
+                height: calc(100% - 5rem);
+                margin: 5rem auto 0;
+            }
+        }
+
+        .glide__slide article .row {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            gap: 20px;
+        }
+
+        .glide__slide article img.userpic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        .glide__slide article img.relative {
+            width: 100%;
+            max-width: 75%;
+            box-sizing: border-box;
+        }
+
+        .glide__slide article.long img.relative {
+            max-height: 120px;
+            width: auto;
+        }
+
+        .glide__slide article h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 3rem;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        @media screen and (max-width: 380px) {
+            .glide__slide article img.userpic {
+                width: 70px;
+                height: 70px;
+            }
+
+            .glide__slide article h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (min-width: 380px) and (max-width: 800px) {
+            .glide__slide article img.userpic {
+                width: 80px;
+                height: 80px;
+            }
+
+            .glide__slide article h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .glide__slide article p {
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+
+        @media screen and (max-width: 380px) {
+            .glide__slide article p {
+                font-size: .8rem;
+            }
+        }
+
+        .glide__slide article a.call-to-action {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 25px;
+            background: rgba(0, 0, 0, .3);
+            display: block;
+            padding: 20px 5px;
+            border-radius: 20px;
+            color: #fff;
+            text-shadow: 0 1px 1px #111;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2rem;
+            z-index: 25;
+        }
+
+        @media screen and (max-width: 380px) {
+            .glide__slide article a.call-to-action {
+                font-size: .8rem;
+                padding: 15px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="glide">
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide" style="background: white">
+                    <article>
+                        <div class="row" style="margin-bottom: 5rem;">
+                            <img src="https://linkee.ws/4/v/4vjwfQSgeTeXnriZuaAmGH.jpg" alt="userpic" class="userpic">
+                            <h1>Привет 👋</h1>
+                        </div>
+
+                        <p>Меня зовут Саша</p>
+                        <p>Я создал эту страницу, чтобы на моем домене было хоть что-то, а не 502 ошибка от
+                            Cloudflare.</p>
+                        <p>А потом решил сделать коллекцию моих проектов.</p>
+                    </article>
+                </li>
+                <li class="glide__slide" style="background: white">
+                    <article>
+                        <img src="https://linkee.ws/G/w/GwNXxUXDJ8YXHzKv5M59uQ.jpg" alt="wishlists" class="relative"/>
+                        <h1 style="margin-top: 2.5rem;">Wishlists</h1>
+
+                        <p>Поскольку я жертва маркетинга, я очень люблю покупать разные штуки, но проблема в том, что
+                            бюджет на покупку этих самых разных штук ограничен.</p>
+                        <p>Поэтому, я люблю вести списки желаний, куда сохраняю все, что очень хочу купить. Для более
+                            удобного ведения этих самых списков я и создал веб-приложение.</p>
+
+                        <a href="https://wishlists.cc/" class="call-to-action" target="_blank">Попробовать</a>
+                    </article>
+                </li>
+                <li class="glide__slide"
+                    style="background-image: url('https://thumb.tildacdn.com/tild3834-6165-4532-b832-313835396461/-/format/webp/1661459144_1-gamerwa.jpeg')">
+                    <div class="overlay"></div>
+                    <article class="long">
+                        <img src="https://linkee.ws/j/9/j9FF2uYEjCWSpWyd7PKsEa.png" alt="berezka vpn" class="relative"/>
+                        <h1 style="margin-top: 2.5rem;">BerezkaVPN</h1>
+
+                        <p>Так уж вышло, что я у мамы эмигрант. Завел трактор и уехал, став иностранным агентом
+                            (неофициально), предателем родины и врагом народа.</p>
+                        <p>Несмотря на все это, иногда приходится пользоваться российскими сервисами, которые не пускают
+                            с европейских ip, ведь кругом враги. Тогда-то и родилась идея обратного ВПН.</p>
+                        <p>Даже удалось добиться работы Кинопоиска. Правда, смотреть там вообще нечего 😅</p>
+
+                        <a href="https://berezka-vpn.ru/" class="call-to-action" target="_blank">Попробовать</a>
+                    </article>
+                </li>
+            </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+        </div>
+    </div>
+</div>
+
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script>
+  new Glide('.glide').mount()
+</script>
+</body>
+</html>
