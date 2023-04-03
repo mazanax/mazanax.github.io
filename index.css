@@ -149,8 +149,8 @@ body {
 
 .glide__slide article .content.scrollable {
     justify-self: end;
-    max-height: 95vh;
-    margin-top: 80px;
+    max-height: calc(100vh - 160px);
+    margin-top: 40px;
     margin-bottom: 80px;
     overflow-y: auto;
     user-select: auto;
