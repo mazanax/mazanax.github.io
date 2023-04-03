@@ -214,6 +214,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 500px;
+    }
+
     .glide .glide__track .glide__slides .glide__slide {
         position: relative;
         background-size: auto 100%;
