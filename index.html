@@ -65,9 +65,13 @@
             border: 1px solid #ccc;
             border-radius: 20px;
             -webkit-border-radius: 20px;
-            background: #fff;
+            background: #ccc;
             height: 5px;
             outline: none;
+        }
+
+        .glide .glide__bullets .glide__bullet.glide__bullet--active {
+            background: #fff;
         }
 
         .glide .glide__arrows {
@@ -309,7 +313,7 @@
 
 <script src="/dist/glide.min.js"></script>
 <script>
-  new Glide('.glide').mount()
+  new Glide('.glide', {type: 'carousel'}).mount()
 
   document.body.style.maxHeight = window.innerHeight + 'px';
   window.addEventListener('resize', function () {
