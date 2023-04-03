@@ -202,6 +202,19 @@ body {
     margin: 0 0 12px;
 }
 
+.glide__slide article ul.horizontal {
+    display: flex;
+    padding-inline-start: 0;
+    list-style: none;
+    gap: 8px;
+}
+
+.glide__slide article ul.horizontal a.social-icon img {
+    border-radius: 10px;
+    width: 36px;
+    height: 36px;
+}
+
 .glide__slide article a.call-to-action {
     width: 100%;
     background: rgba(0, 0, 0, .4);
@@ -281,5 +294,11 @@ body {
 
     .glide__slide article a.call-to-action {
         font-size: 18px;
+    }
+
+    .glide__slide article ul.horizontal a.social-icon img {
+        border-radius: 6px;
+        width: 28px;
+        height: 28px;
     }
 }
