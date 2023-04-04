@@ -186,7 +186,7 @@ body {
 }
 
 .glide__slide article.long img.relative:not(.full) {
-    max-height: 90px;
+    max-height: 75px;
     width: auto;
 }
 
