@@ -231,7 +231,7 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    padding: 16px 8px;
+    padding: 12px 8px;
     z-index: 9;
     position: absolute;
     left: 36px;
@@ -303,6 +303,7 @@ body {
 
     .glide__slide a.call-to-action {
         font-size: 18px;
+        padding: 16px 8px;
     }
 
     .glide__slide article ul.horizontal a.social-icon img {
