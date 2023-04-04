@@ -73,7 +73,7 @@ body {
 
 .glide .glide__arrows .glide__arrow {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    width: 40px;
+    width: 30px;
     border: 0;
     outline: none;
     background: none;
@@ -140,8 +140,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .glide__slide article .content {
@@ -234,8 +234,8 @@ body {
     padding: 12px 8px;
     z-index: 9;
     position: absolute;
-    left: 36px;
-    right: 36px;
+    left: 31px;
+    right: 31px;
     bottom: 40px;
 }
 
@@ -264,11 +264,20 @@ body {
         max-width: 500px;
     }
 
+    .glide .glide__arrows .glide__arrow {
+        width: 40px;
+    }
+
     .glide .glide__track .glide__slides .glide__slide {
         position: relative;
         background-size: auto 100%;
         padding: 40px 20px;
         height: 100%;
+    }
+
+    .glide__slide article {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .glide__slide article.background .content {
@@ -304,6 +313,8 @@ body {
     .glide__slide a.call-to-action {
         font-size: 18px;
         padding: 16px 8px;
+        left: 36px;
+        right: 36px;
     }
 
     .glide__slide article ul.horizontal a.social-icon img {
