@@ -9,7 +9,7 @@
           "sudo",
           "docker"
         ],
-        "name": "admin",
+        "name": "core",
         "passwordHash": "$y$j9T$yntlC4gHb.5NvMv.LyY4u.$lP7ZNe1JqRhTeIBTrX.Yan233hA.Z8INMqTp6y3l007"
       }
     ]
