@@ -1,0 +1,23 @@
+{
+  "ignition": { "version": "3.0.0" },
+  "passwd": {
+    "users": [
+      {
+        "name": "systemUser",
+        "passwordHash": "$y$j9T$yntlC4gHb.5NvMv.LyY4u.$lP7ZNe1JqRhTeIBTrX.Yan233hA.Z8INMqTp6y3l007"
+      },
+      {
+        "name": "user",
+        "uid": 1000
+      }
+    ]
+  },
+  "storage": {
+    "files": [{
+      "path": "/etc/hostname",
+      "mode": 420,
+      "overwrite": true,
+      "contents": { "source": "data:,coreos" }
+    }]
+  }
+}
